@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The band</title>
+    <style>
+        .pc,.tablet,.mobile{
+            display: none;
+            text-align: center;
+        }
+        @media(min-width:1024px){
+            .pc{
+                display: block;
+            }
+        }
+        @media(min-width:740px) and (max-width:1023px) {
+            .tablet{
+                display: block;
+            }
+        }
+        @media(max-width:740px){
+            .mobile{
+                display: block;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <h2 class="pc" style="font-size: 68px;">PC</h2>
+    <h2 class="tablet" style="font-size: 68px;">TABLET</h2>
+    <h2 class="mobile" style="font-size: 68px;">MOBILE</h2>
+</body>
+</html>
